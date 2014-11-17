@@ -5,11 +5,11 @@ lock '3.2.1'
 set :stages, ["production"]
 
 set :application, 'angrailmanfullbundle_translation'
-set :repo_url, 'git@github.com:rzust/angrailmanfullbundle_translation.git'
+set :repo_url, 'git@github.com:rzust/translation.git'
 set :branch, 'master'
 set :deploy_to, '/home/deploy/apps/angrailmanfullbundle_translation'
 
-set :pty, false
+set :pty, true
 set :deploy_via, :remote_cache
 set :use_sudo, false
 set :conditionally_migrate, false
@@ -37,7 +37,7 @@ set(:executable_config_files, %w(
 set(:symlinks, [
   {
     source: "nginx.conf",
-    link: "/opt/nginx/sites-enabled/#{fetch(:application)}"
+    link: "/etc/nginx/sites-enabled/#{fetch(:application)}"
   },
   {
     source: "unicorn_init.sh",
@@ -77,7 +77,8 @@ set(:symlinks, [
 # set :keep_releases, 5
 namespace :deploy do
 
-  before 'deploy:setup_config', 'nginx:remove_default_vhost'
+  # before 'deploy:setup_config', 'nginx:remove_default_vhost'
+  # after "deploy:setup_config", "redis:install"
   before :deploy, "deploy:check_revision"
   after 'deploy:setup_config', 'nginx:reload'
   after :deploy, "deploy:restart"
