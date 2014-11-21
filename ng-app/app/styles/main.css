@@ -1098,6 +1098,11 @@ p.bigger{
     margin: 0;
 }
 
+.jumbotron{
+    background-color: #35bdf6;
+    color: #f7f7f7;
+    text-align: center;
+}
 
 /*iframe*/
 iframe{
