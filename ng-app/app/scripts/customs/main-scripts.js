@@ -3,26 +3,26 @@
 /* ==============================================
 main flex slider
 =============================================== */
-$(window).load(function() {
-    $('.main-flex-slider').flexslider({
-        slideshowSpeed: 5000,
-        directionNav: false,
-        animation: "fade",
-        controlNav:false
-    });
-});
+// $(window).load(function() {
+//   $('.main-flex-slider').flexslider({
+//     slideshowSpeed: 5000,
+//     directionNav: false,
+//     animation: "fade",
+//     controlNav:false
+//   });
+// });
 
 /* ==============================================
 portfolio gallery slide
 =============================================== */
-$(window).load(function() {
-    $('.portfolio-slide').flexslider({
-        slideshowSpeed: 5000,
-        directionNav: false,
-        animation: "fade",
-        controlNav:true
-    });
-});
+// $(window).load(function() {
+//     $('.portfolio-slide').flexslider({
+//         slideshowSpeed: 5000,
+//         directionNav: false,
+//         animation: "fade",
+//         controlNav:true
+//     });
+// });
 
 
 
@@ -32,7 +32,7 @@ Sticky Navbar
 =============================================== */
 
 $(document).ready(function(){
-    $(".navbar").sticky({topSpacing:0});
+  $(".navbar").sticky({topSpacing:0});
 });
 
 
@@ -64,62 +64,62 @@ Smooth Scroll To Anchor
 
 //jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
-    $('a.scroll,.btn.scroll').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top - 50
-        }, 1500, 'easeInOutExpo');
-        event.preventDefault();
-    });
+  $('a.scroll,.btn.scroll').bind('click', function(event) {
+      var $anchor = $(this);
+      $('html, body').stop().animate({
+          scrollTop: $($anchor.attr('href')).offset().top - 50
+      }, 1500, 'easeInOutExpo');
+      event.preventDefault();
+  });
 });
 
 
 
 /*=========================*/
-     /*========portfolio mix====*/
-     /*==========================*/
-    $('#grid').mixitup();
+/*========portfolio mix====*/
+/*==========================*/
+$('#grid').mixitup();
 
-       /*=========================*/
-     /*========tooltip and popovers====*/
-     /*==========================*/
-    $("[data-toggle=popover]").popover();
+ /*=========================*/
+/*========tooltip and popovers====*/
+/*==========================*/
+$("[data-toggle=popover]").popover();
 
-    $("[data-toggle=tooltip]").tooltip();
+$("[data-toggle=tooltip]").tooltip();
 
 
 /*=========================*/
-     /*========Animation on scroll with wow.js====*/
-     /*==========================*/
+/*========Animation on scroll with wow.js====*/
+/*==========================*/
 
-   wow = new WOW(
-      {
-        animateClass: 'animated',
-        offset:       100,
-        mobile:       true
-      }
-    );
-    wow.init();
+wow = new WOW(
+{
+  animateClass: 'animated',
+  offset:       100,
+  mobile:       true
+}
+);
+wow.init();
 
 
-    /*=========================*/
-     /*========on hover dropdown navigation====*/
-     /*==========================*/
+/*=========================*/
+/*========on hover dropdown navigation====*/
+/*==========================*/
 
 
 $(document).ready(function() {
 
-    $('.js-activated').dropdownHover({
-        instantlyCloseOthers: false,
-        delay: 0
-    }).dropdown();
+  $('.js-activated').dropdownHover({
+      instantlyCloseOthers: false,
+      delay: 0
+  }).dropdown();
 
 });
 
 /************parallax*********************/
 $(function(){
-      $.stellar({
-        horizontalScrolling: false
-      });
+  $.stellar({
+    horizontalScrolling: false
+  });
 });
 

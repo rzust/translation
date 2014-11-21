@@ -3,7 +3,7 @@
     .parallax-overlay
     .home-content.text-center
       .container
-        h1.slide-logo
+        h1.slide-logo.wow.animated.flipInY(data-wow-delay=".5s")
           img(src="images/whale.png")
         h1.slide-logo Barnacle Translations
         .main-flex-slider
@@ -108,7 +108,7 @@
           h2.large.section-title Our Services
       .container
         .row
-          .col-md-6
+          .col-md-6.wow.animated.fadeInLeft(data-wow-delay="0.3s")
             .margin-btm-40
               //- h4 Flexibility built in
               p.paint-letter.bigger
@@ -116,8 +116,8 @@
               p.bigger
                 | We are a company that has been active since 2012, offering companies the very best in translation services. As a result of our success, our company has largely expanded since its beginnings and is currently working with companies both at a regional level as well as internationally. Notably with many clients coming from Latin America.
 
-          .col-md-6.wow.animated.fadeInLeft(data-wow-delay="0.3s")
-            .row.margin-btm-20
+          .col-md-6
+            .row.margin-btm-20.wow.animated.fadeInRight(data-wow-delay="0.3s")
               .col-md-2
                 .services-icon
                   i.ion-images
@@ -126,7 +126,7 @@
                   h3.left Translations
                   //- p
                   //-   | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget viverra augue. Nunc dignissim rutrum tempor.
-            .row.margin-btm-20
+            .row.margin-btm-20.wow.animated.fadeInRight(data-wow-delay="0.5s")
               .col-md-2
                 .services-icon
                   i.ion-compose
@@ -135,7 +135,7 @@
                   h3.left Editing
                   //- p
                   //-   | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget viverra augue. Nunc dignissim rutrum tempor.
-            .row.margin-btm-20
+            .row.margin-btm-20.wow.animated.fadeInRight(data-wow-delay="0.7s")
               .col-md-2
                 .services-icon
                   i.ion-chatbox-working
@@ -144,7 +144,7 @@
                   h3 Transcription
                   //- p
                   //-   | We use the latest technology to give you the best solution for your Internet presence.
-            .row.margin-btm-20
+            .row.margin-btm-20.wow.animated.fadeInRight(data-wow-delay="0.9s")
               .col-md-2
                 .services-icon
                   i.ion-checkmark
