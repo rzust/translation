@@ -51,7 +51,8 @@
           h2.large.section-title About us
       .container
         .row
-          .col-md-6.col-sm-6
+          .col-md-2.col-sm-2
+          .col-md-8.col-sm-8
             .about-more-info.wow.animated.fadeInDown(data-wow-duration="0.3s")
               p.paint-letter.bigger
                 | Barnacle translations is a translations, and proofreading company dedicated in delivering quality services to businesses wishing to communicate and do business in an ever increasing global market.
@@ -277,19 +278,19 @@
               .row
                 .col-md-6.form-group(ng-class="{'has-error': contactForm.name.$invalid && !contactForm.name.$pristine, 'has-success': contactForm.name.$valid && !contactForm.name.$pristine}")
                   label.control-label(for="name") Name
-                  input#name.form-control(type="text" ng-model="contact.formParams.name" name="name" required)
+                  input#name.form-control(type="text" ng-model="contact.formParams.name" name="name" required autocomplete="off")
 
                 .col-md-6.form-group(ng-class="{'has-error': contactForm.email.$invalid && !contactForm.email.$pristine, 'has-success': contactForm.email.$valid && !contactForm.email.$pristine}")
                   label.control-label(for="email") Email
-                  input#email.form-control(type="email" ng-model="contact.formParams.email" name="email" required)
+                  input#email.form-control(type="email" ng-model="contact.formParams.email" name="email" required autocomplete="off")
 
                 .col-md-12.form-group(ng-class="{'has-error': contactForm.subject.$invalid && !contactForm.subject.$pristine, 'has-success': contactForm.subject.$valid && !contactForm.subject.$pristine}")
                   label.control-label(for="subject") Subject
-                  input#subject.form-control(type="text" ng-model="contact.formParams.subject" name="subject" required)
+                  input#subject.form-control(type="text" ng-model="contact.formParams.subject" name="subject" required autocomplete="off")
 
                 .col-md-12.form-group(ng-class="{'has-error': contactForm.message.$invalid && !contactForm.message.$pristine, 'has-success': contactForm.message.$valid && !contactForm.message.$pristine}")
                   label.control-label(for="message") Message
-                  textarea#message.form-control(rows="7" ng-model="contact.formParams.message" name="message" required)
+                  textarea#message.form-control(rows="7" ng-model="contact.formParams.message" name="message" required autocomplete="off")
 
                 .col-md-12.text-right
                   button.btn.btn-theme-color.btn-lg(type="submit" ng-disabled="contactForm.$invalid")

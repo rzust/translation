@@ -1058,14 +1058,20 @@ position: relative;
         margin-bottom: 20px;
     }
     .main-flex-slider h1{
-    font-size: 3.5em;
-    font-weight: 700;
-    margin-bottom: 30px;
-}
-.home-arrow-down{
-  margin-top: 30px;
+        font-size: 3.5em;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+    .home-arrow-down{
+        margin-top: 30px;
+    }
+
 }
 
+@media(max-width: 450px){
+    .navbar-default .navbar-brand{
+        font-size: 21px;
+    }
 }
 
 /**portfolio single*/
