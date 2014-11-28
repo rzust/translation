@@ -449,6 +449,10 @@ About section
 }
 .about-more-info{
     margin-bottom: 30px;
+    text-align: justify;
+}
+.services{
+    text-align: justify;
 }
 /*.about-more-info p:first-letter{
     color:#35bdf6;
