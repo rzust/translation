@@ -1058,7 +1058,7 @@ position: relative;
         margin-bottom: 20px;
     }
     .main-flex-slider h1{
-        font-size: 3.5em;
+        font-size: 1.5em;
         font-weight: 700;
         margin-bottom: 30px;
     }
@@ -1070,7 +1070,7 @@ position: relative;
 
 @media(max-width: 450px){
     .navbar-default .navbar-brand{
-        font-size: 21px;
+        font-size: 19px;
     }
 }
 

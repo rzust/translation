@@ -43,7 +43,7 @@ angular.module('ngAppApp')
     var map;
     var marker;
 
-    myLatlng = new google.maps.LatLng(37.397802, -121.890288);
+    myLatlng = new google.maps.LatLng(51.4528336, -0.9796824999999671);
 
     var mapOptions = {
       zoom: 13,
