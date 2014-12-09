@@ -47,11 +47,11 @@ section#about.padding-80
     .container
       .section-heading.text-center
         h4.small.section-title
-          span We love what we do?
+          span We love what we do
         h2.large.section-title About us
     .container
       .row
-        .col-md-6.col-sm-6
+        .col-md-7.col-sm-7
           .about-more-info
             p.paint-letter.bigger.wow.animated.fadeInDown(data-wow-delay="0.3s")
               | Barnacle translations is a translations, and proofreading company dedicated in delivering quality services to businesses wishing to communicate and do business in an ever increasing global market.
@@ -63,7 +63,8 @@ section#about.padding-80
               | For more information on our services, see
               a.scroll(href="#contact")  contact us
               |  for more details.
-        //- .col-md-6.col-sm-6
+        .col-md-5.col-sm-5
+          img(src="images/diccionary.jpg" class="img-responsive img-shadow")
         //-   .about-box.wow.animated.fadeInDown(data-wow-delay="0.5")
         //-     .about-box-icon
         //-       i.ion-ios7-infinite-outline
@@ -106,7 +107,7 @@ section#services.padding-80
     .container
       .section-heading.text-center
         h4.small.section-title
-          span What we do?
+          span What do we do?
         h2.large.section-title Our Services
     .container
       .row
@@ -122,6 +123,12 @@ section#services.padding-80
               .col-xs-12
                 table.table.table-bordered
                   tbody
+                    tr
+                      th(style="border: none;") Source Language
+                      th(colspan="3" style="border: none;")
+                        i.ion-arrow-right-a
+                        |  Target Languages
+
                     tr
                       th English
                       td French
@@ -298,7 +305,7 @@ section#contact.padding-80
     .container
       .section-heading.text-center
         h4.small.section-title
-          span we Love to here from you
+          span we would love to hear from you
         h2.large.section-title Contact Us
     .container(ng-controller="ContactCtrl as contact")
       .row
