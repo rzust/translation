@@ -85,11 +85,12 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
     address:              'smtp.zoho.com',
-    port:                 587,
-    domain:               'barnacletranslations.com',
+    port:                 465,
     user_name:            'info@barnacletranslations.com',
     password:             'info@barnacle',
-    authentication:       'plain',
+    authentication:       :login,
+    ssl:                  true,
+    tls:                  true,
     enable_starttls_auto: true
   }
 end
