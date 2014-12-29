@@ -9,7 +9,7 @@ module V1
         :subject => params[:subject],
         :message => params[:message]
       }
-      AppMailer.delay.send_quote(data).deliver
+      AppMailer.delay.send_quote(data)
       return data
     end
   end
