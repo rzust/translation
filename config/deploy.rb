@@ -9,7 +9,7 @@ set :repo_url, 'git@github.com:rzust/translation.git'
 set :branch, 'master'
 set :deploy_to, '/home/deploy/apps/angrailmanfullbundle_translation'
 
-set :pty, true
+set :pty, false
 set :deploy_via, :remote_cache
 set :use_sudo, false
 set :conditionally_migrate, false
