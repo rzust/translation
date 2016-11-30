@@ -70,6 +70,12 @@ a:focus {
 .margin-btm-20{
     margin-bottom: 20px;
 }
+.margin-top-40{
+    margin-bottom: 40px;
+}
+.margin-top-20{
+    margin-bottom: 20px;
+}
 /*****************home ********
 ******************************/
 #home {
@@ -1101,6 +1107,10 @@ p.bigger{
     text-align: left;
 }
 
+.right{
+    text-align: right;
+}
+
 .services-icon h3{
     /*color: #333;*/
     color: #f3f3f3;
@@ -1121,6 +1131,13 @@ p.bigger{
     background-color: #35bdf6;
     color: #f7f7f7;
     text-align: center;
+}
+
+.big-link{
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: capitalize;
 }
 
 /*iframe*/

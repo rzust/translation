@@ -18,16 +18,18 @@ angular.module('ngAppApp')
       ngProgress.color('#35bdf6');
       if (isValid) {
         ngProgress.start();
-        $http({method: 'POST', url: '/api/v1/forward_quote', data: this.formParams})
-        .success(function(data, status) {
-          contact.sender     = data.name;
-          contact.submitted  = true;
-          contact.formParams = {};
-        })
-        .error(function(data, status) {
-
-        });
-
+        // $http({method: 'POST', url: '/api/v1/forward_quote', data: this.formParams})
+        // .success(function(data, status) {
+        //   contact.sender     = data.name;
+        //   contact.submitted  = true;
+        //   contact.formParams = {};
+        // })
+        // .error(function(data, status) {
+        //
+        // });
+        contact.sender     = this.formParams.name;
+        contact.submitted  = true;
+        contact.formParams = {};
         ngProgress.complete();
       }
     };
